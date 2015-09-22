@@ -22,13 +22,13 @@
     font-weight: normal;
     font-style: normal;
 }
-
+body{background: black;}
 .cover{margin: 0;padding: 0;} /*special classes for specific style quirks*/
 .inline{display: inline-block;}
 
 /**/
 .wrap{
-	height: 100vh;
+	/*height: 100vh;*/
 	background: black;
 	color:white;
 /*	-webkit-filter:blur(1px);*/
@@ -60,11 +60,74 @@ h2{
 	border-bottom: 3px rgb(100,100,100) solid;
 }
 
+.sign{
+	border: #0076E5 solid 12px;
+	color: #0076E5;
+	text-align: center;
+	font-family: Langdon;
+	font-size: 200px;
+	font-weight: bold;
+	position: relative;
+}
+.corner_top_right{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 60px 60px 0;
+	border-color: transparent #0076E5 transparent transparent;
+	position: absolute;
+	right: 0;
+}
+.corner_top_left{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 60px 60px 0 0;
+	border-color: #0076E5 transparent transparent transparent;
+	position: absolute;
+	left: 0;
+}
+.corner_bottom_left{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 60px 0 0 60px;
+	border-color: transparent transparent transparent #0076E5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.corner_bottom_right{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 60px 60px;
+	border-color: transparent transparent #0076E5 transparent;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.empty{
+	border: 7px solid red;
+	color: red;
+	text-align: center;
+	font-family: Langdon;
+	font-size: 120px;
+}
+
+.divider{
+	border-top: 4px solid #0076E5;
+}
+
 /*section*/
 .section{
 	border: #0076E5 solid 7px;
+	border-top: #0076E5 solid 5px;
+	border-bottom: #0076E5 solid 3px;
 	position: relative;
-	height: 20%;
+	height: 20vh;
+	/*-webkit-filter:blur(.8px);*/
 	/*border-top: #0076E5 double 40px;*/
 }
 .line{
@@ -81,8 +144,9 @@ h2{
 	font-family: Langdon;
 	font-weight: bold;
 	padding-left: 30px;
-	line-height: 95px;
+	line-height: 80px;
 	/*border: 1px solid white;*/
+	/*height: 100%;*/
 	/*line-height: 100px;*/
 }
 .name_tag{
@@ -125,7 +189,7 @@ h2{
 	font-size: 44px;
 	line-height: 44px;
 	font-weight: bold;
-	border-left: 2px solid #0076E5;
+	/*border-left: 2px solid #0076E5;*/
 }
 .number_tag{
 	float: right;
@@ -159,9 +223,11 @@ h2{
 /*info*/
 .info{
 	border: #0076E5 solid 7px;
+	border-bottom: #0076E5 solid 5px;
 	border-top: 0;
 	color: #0076E5;
-	height: 7%;
+	height: 7vh;
+	/*-webkit-filter:blur(.8px);*/
 }
 
 .x{
@@ -196,6 +262,10 @@ h2{
 	height:100%;
 	border: #007E00 4px solid;
 	color: #007E00;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 36px;
 }
 
 /*links*/
@@ -213,8 +283,8 @@ h2{
 }
 .good{
 	background: transparent;
-	color: #007E00;
-	border: 4px solid #007E00;
+	color: #00FCE8;
+	border: 4px solid #00FCE8;
 	line-height: 36px;
 }
 .bad{
@@ -249,4 +319,26 @@ h2{
 .fill{
 	height: 100%;
 	background: #0076E5;
+}
+
+.foot{
+	border: 15px solid #0076E5;
+	text-align: center;
+	font-size: 60px;
+	font-family: Langdon;
+}
+
+::-webkit-scrollbar{width: 20px;}
+::-webkit-scrollbar-track{
+	background: black;
+	border-left: 2px solid rgb(100,100,100);
+	border-right: 2px solid rgb(100,100,100);
+}
+::-webkit-scrollbar-thumb{
+	background: rgb(40,40,40);
+	border: 2px solid rgb(150,150,150);
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: rgb(60,60,60);
+	/*border: 2px solid rgb(20,20,20);*/
 }
