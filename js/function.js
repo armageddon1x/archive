@@ -30,46 +30,37 @@ $(function(){
 		}
 	);
 
-	// $(".name_tag").hover(
-	// 	function(){},
-	// 	function(){}
-	// 	);
-
-	// if(($(".name_tag").siblings(".name").html())==="FINAL PROJECT"){
-		// alias("FINAL PROJECT", "RPG BATTLE");
-	// }
-
-	// if(($(".name_tag").siblings(".name").html())==="WEB DEV HW #1"){
-		// alias("WEB DEV HW #1","HTML");
-	// }
-
-	// var tag=$(this);
-	// var sib=$(this).siblings();
-	// var html=$(this).siblings(".name").html();
-
-	// $( ".name:contains('FINAL PROJECT')" ).
+	//alias renaming on hover is here
+	alias("FRONT END #1","USING SASS/SCSS")
+	alias("SIDE PROJECT #2","DRUM KIT")
+	alias("SIDE PROJECT #1","ARCHIVE")
 	alias("FINAL PROJECT", "RPG BATTLE");
-	alias("WEB DEV HW #1","HTML");
+	alias("WEB DEV HW #10","BUSINESS WEBSITE");
+	alias("WEB DEV HW #9","JAVASCRIPT CLOCK");
+	alias("WEB DEV HW #8","MEDIA QUERY");
+	alias("WEB DEV HW #7","CAUSES WEBSITE");
+	alias("WEB DEV HW #6","JQUERY NOTES");
+	alias("WEB DEV HW #5","JAVASCRIPTE NOTES");
+	alias("WEB DEV HW #4","PERSONAL WEBSITE");
+	alias("WEB DEV HW #3","CSS LAYOUTS");
+	alias("WEB DEV HW #2","HTML + CSS");
+	alias("WEB DEV HW #1","HTML BASICS");
 
 	function alias(original, new_name){
 		$(".name_tag").hover(
-
-
 			function(){
-				// var original=$(this).siblings(".name").text();
-				// console.log("html "+$(this).siblings(".name").text());
-
-				//changes the text
-				$(this).siblings(".name").text(new_name);
+				if($(this).siblings(".name").text()===original){
+					//changes the text
+					$(this).siblings(".name").text(new_name);
+				}
 			},
 			function(){
-				//restores the text
-				$(this).siblings(".name").text(original);
+				if($(this).siblings(".name").text()===new_name){
+					//restores the text
+					$(this).siblings(".name").text(original);
+				}
 			}
-
-
 		);
 	}
 	
-
 });

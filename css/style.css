@@ -2,22 +2,6 @@
 
 /*included fonts*/
 @font-face {
-    font-family: 'League Gothic';
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Coda';
-    src: url('../fonts/Coda-Heavy.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Langdon';
     src: url('../fonts/Langdon.otf');
     font-weight: normal;
@@ -63,7 +47,7 @@ h2{
 
 /*signs for the active projects/archive*/
 .sign{
-	border: #0076E5 solid 12px;
+	border: #0076E5 solid 15px;
 	color: #0076E5;
 	text-align: center;
 	font-family: Langdon;
@@ -125,11 +109,11 @@ h2{
 
 /*section*/
 .section{
-	border: #0076E5 solid 7px;
+	border: #0076E5 solid 10px;
 	border-top: #0076E5 solid 5px;
-	border-bottom: #0076E5 solid 3px;
+	border-bottom: #0076E5 solid 5px;
 	position: relative;
-	height: 20vh;
+	height: 25vh;
 	/*-webkit-filter:blur(.8px);*/
 }
 /*decorative line*/
@@ -143,11 +127,13 @@ h2{
 /*name*/
 .name{
 	color:#0076E5;
-	font-size: 130px;
+	font-size: 11em;
 	font-family: Langdon;
 	font-weight: bold;
 	padding-left: 30px;
-	line-height: 80px;
+	line-height: .7em;
+	/*height: 100%;*/
+	/*border: 1px solid white;*/
 }
 .name_tag{
 	float: right;
@@ -182,7 +168,7 @@ h2{
 	height: 100%;
 	text-align: center;
 	font-size: 44px;
-	line-height: 44px;
+	line-height: 6.5vh;
 	font-weight: bold;
 }
 .number_tag{
@@ -234,7 +220,7 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 5.4vh;
 	border: 4px solid #0076E5;
 }
 .progress_status_wip{
@@ -244,7 +230,7 @@ h2{
 	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 36px;
+	line-height: 5.4vh;
 	padding-left: 15px;
 }
 .progress_status_wip:hover{
@@ -259,7 +245,7 @@ h2{
 	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 36px;
+	line-height: 5.4vh;
 }
 .progress_status_done:hover{
 	background: #007E00;
@@ -273,7 +259,7 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 5.4vh;
 	border: 4px solid #0076E5;
 }
 /*the link box itself*/
@@ -286,7 +272,6 @@ h2{
 	background: transparent;
 	color: #00FCE8;
 	border: 4px solid #00FCE8;
-	line-height: 36px;
 }
 .good:hover{
 	background: #00FCE8;
@@ -297,7 +282,6 @@ h2{
 	background: transparent;
 	color: #5E5D5E;
 	border: 4px solid #5E5D5E;
-	line-height: 36px;
 }
 .bad:hover{
 	background: #5E5D5E;
@@ -313,7 +297,7 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 5.4vh;
 	border: 4px solid #0076E5;
 }
 /*author is me*/
@@ -322,7 +306,7 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 5.4vh;
 	color: #020E6C;
 	border: 4px solid #020E6C;
 }
@@ -337,7 +321,7 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 5.4vh;
 	color: orange;
 	border: 4px solid #DE6700;
 }
@@ -362,7 +346,7 @@ h2{
 	font-family: Langdon;
 }
 
-::-webkit-scrollbar{width: 20px;}
+/*::-webkit-scrollbar{width: 20px;}
 ::-webkit-scrollbar-track{
 	background: black;
 	border-left: 2px solid rgb(100,100,100);
@@ -370,13 +354,38 @@ h2{
 }
 ::-webkit-scrollbar-thumb{
 	background: rgb(40,40,40);
-	border: 2px solid #0076E5;
+	border: 2px solid #26E8E6;
 }
 ::-webkit-scrollbar-thumb:hover{
 	background-color: rgb(60,60,60);
-	/*border: 2px solid rgb(20,20,20);*/
 }
 ::-webkit-scrollbar-button{
       background: #00023D;
-      border: 2px solid #0076E5;
+      border: 2px solid #26E8E6;
+      height: 20px;
+}*/
+
+::-webkit-scrollbar{width: 20px;}
+::-webkit-scrollbar-track{
+	background: black;
+	border-left: 2px solid rgb(100,100,100);
+	border-right: 2px solid rgb(100,100,100);
+}
+::-webkit-scrollbar-thumb{
+	/*height: 40px;*/
+	background: #0076E5;
+	border: 2px solid #C7C7C7;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #0000A6;
+	/*border: 2px solid rgb(20,20,20);*/
+}
+::-webkit-scrollbar-button{
+      background: #0076E5;
+      border: 2px solid #C7C7C7;
+      height: 20px;
+}
+
+@media (min-height: 700px) {
+	.section{height: 22vh;}
 }
